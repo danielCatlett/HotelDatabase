@@ -85,7 +85,8 @@ SELECT RoomNumber FROM Reservations WHERE
 SELECT guests.GuestName, COUNT(reservations.ReservationID) 
 	FROM reservations INNER JOIN guests
     ON reservations.GuestID = guests.GuestID
-    GROUP BY reservations.GuestID;
+    GROUP BY reservations.GuestID
+    ORDER BY COUNT(reservations.ReservationID) DESC;
 -- Daniel Catlett, 2
 -- Mack Simmer, 4
 -- Bettyann Seery, 2

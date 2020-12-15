@@ -44,7 +44,8 @@ CREATE TABLE Reservations
     Adults INT NOT NULL,
     Children INT NOT NULL,
     StartDate DATE NOT NULL,
-    EndDate DATE NOT NULL
+    EndDate DATE NOT NULL,
+    TotalCost DOUBLE NOT NULL
 );
 
 ALTER TABLE Rooms
